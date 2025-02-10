@@ -1,0 +1,184 @@
+/* Filename - styles.css */
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fff5f7;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #ff3b3f;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Navbar */
+#navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #ff3b3f;
+    padding: 10px 0;
+}
+
+#navbar img {
+    width: 80px;
+    height: auto;
+    animation: bounce 2s infinite;
+}
+
+/* Hero Section */
+#hero-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #ffe5ec;
+    border-radius: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 900px;
+    animation: slideIn 1s ease-in-out;
+}
+
+.btn {
+    background-color: #ff3b3f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+}
+
+/* Menu Section */
+#menu-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.dish {
+    width: 300px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.dish:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+}
+
+/* About Us */
+#about-us, #testimonials {
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 900px;
+    border-radius: 15px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Footer */
+footer {
+    background-color: #ff3b3f;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin: 10px;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Menu Page Styles */
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-item {
+    background-color: #ffe5ec;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.menu-item .btn {
+    margin-top: 10px;
+}
